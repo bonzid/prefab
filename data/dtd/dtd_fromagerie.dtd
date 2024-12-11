@@ -1,0 +1,72 @@
+<!ELEMENT Episode (#PCDATA | Section)*>
+
+<!ELEMENT Comment (#PCDATA)>
+<!ATTLIST Comment 
+    desc CDATA #IMPLIED>
+    
+<!ELEMENT Topics (#PCDATA | Topic)*>
+<!ELEMENT Event (#PCDATA)>
+<!ATTLIST Event 
+    type CDATA #IMPLIED
+    desc CDATA #IMPLIED
+    extent CDATA #IMPLIED>
+    
+<!ELEMENT Speakers (#PCDATA | Speaker)*>
+
+<!ELEMENT Turn (#PCDATA|Comment|Event|Sync|Who|PPI|spk|Commentaire)*>
+<!ATTLIST Turn 
+    startTime CDATA #IMPLIED
+    endTime CDATA #IMPLIED
+    speaker CDATA #IMPLIED>
+    
+<!ELEMENT Topic (#PCDATA)>
+<!ATTLIST Topic 
+    id CDATA #IMPLIED
+    desc CDATA #IMPLIED>
+    
+<!ELEMENT Sync (#PCDATA)>
+<!ATTLIST Sync 
+    time CDATA #IMPLIED>
+    
+<!ELEMENT Trans (#PCDATA | Topics | Speakers | Episode)*>
+<!ATTLIST Trans 
+    scribe CDATA #IMPLIED
+    audio_filename CDATA #IMPLIED
+    version CDATA #IMPLIED
+    version_date CDATA #IMPLIED
+    elapsed_time CDATA #IMPLIED>
+    
+<!ELEMENT Section (#PCDATA | Turn)*>
+<!ATTLIST Section 
+    type CDATA #IMPLIED
+    startTime CDATA #IMPLIED
+    endTime CDATA #IMPLIED
+    topic CDATA #IMPLIED>
+    
+<!ELEMENT Speaker (#PCDATA)>
+<!ATTLIST Speaker 
+    id CDATA #IMPLIED
+    name CDATA #IMPLIED
+    check CDATA #IMPLIED
+    dialect CDATA #IMPLIED
+    accent CDATA #IMPLIED
+    scope CDATA #IMPLIED>
+    
+<!ELEMENT Who (#PCDATA)>
+<!ATTLIST Who 
+    nb CDATA #IMPLIED>
+
+<!ELEMENT PPI (#PCDATA)>
+<!ATTLIST PPI
+  CONSTR (PLUS|NEG) "NEG"
+  DECLENCH (HETERO|AUTO|CITA|IND|NEG) #REQUIRED
+  MOD (DECLAR|INTERR|INJONC|IND) "DECLAR"
+  GESTE CDATA #IMPLIED
+  RENVOI_SITUATION_EXTRALING (NEG|PLUS) "NEG"
+  PORTEE (HETERO|AUTO_ANTE|AUTO_POST|NEG|IND|AUTO_ANTE_POST) #REQUIRED
+  TYPE CDATA #REQUIRED
+  COMMENT CDATA #IMPLIED>
+  
+  <!ELEMENT Commentaire (#PCDATA)>
+  
+  <!ELEMENT spk (#PCDATA)>

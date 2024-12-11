@@ -1,0 +1,79 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT Trans (Speakers,Episode)>
+<!ATTLIST Trans
+  xmlns CDATA #FIXED ''
+  audio_filename NMTOKEN #REQUIRED
+  elapsed_time CDATA #REQUIRED
+  scribe CDATA #REQUIRED
+  version CDATA #REQUIRED
+  version_date CDATA #REQUIRED>
+
+<!ELEMENT Speakers (Speaker)+>
+<!ATTLIST Speakers
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Episode (Section)>
+<!ATTLIST Episode
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Speaker EMPTY>
+<!ATTLIST Speaker
+  xmlns CDATA #FIXED ''
+  accent CDATA #REQUIRED
+  check NMTOKEN #REQUIRED
+  dialect NMTOKEN #REQUIRED
+  id NMTOKEN #REQUIRED
+  name CDATA #REQUIRED
+  scope NMTOKEN #REQUIRED>
+
+<!ELEMENT Section (Turn)+>
+<!ATTLIST Section
+  xmlns CDATA #FIXED ''
+  endTime CDATA #REQUIRED
+  startTime CDATA #REQUIRED
+  type NMTOKEN #REQUIRED>
+
+<!ELEMENT Turn (#PCDATA|Comment|Event|Sync|Who|PPI|spk|Commentaire)*>
+<!ATTLIST Turn
+  xmlns CDATA #FIXED ''
+  endTime CDATA #REQUIRED
+  speaker CDATA #IMPLIED
+  startTime CDATA #REQUIRED>
+  
+<!ELEMENT PPI (#PCDATA)>
+<!ATTLIST PPI
+  CONSTR (PLUS|NEG) "NEG"
+  DECLENCH (HETERO|AUTO|CITA|IND|NEG) #REQUIRED
+  MOD (DECLAR|INTERR|INJONC|IND) "DECLAR"
+  RENVOI_SITUATION_EXTRALING (NEG|PLUS) "NEG"
+  GESTE CDATA #IMPLIED
+  PORTEE (HETERO|AUTO_ANTE|AUTO_POST|NEG|IND|AUTO_ANTE_POST) #REQUIRED
+  TYPE CDATA #REQUIRED
+  COMMENT CDATA #IMPLIED>
+  
+  <!ELEMENT Commentaire (#PCDATA)>
+  
+  <!ELEMENT spk (#PCDATA)>
+
+<!ELEMENT Comment EMPTY>
+<!ATTLIST Comment
+  xmlns CDATA #FIXED ''
+  desc CDATA #REQUIRED>
+
+<!ELEMENT Event EMPTY>
+<!ATTLIST Event
+  xmlns CDATA #FIXED ''
+  desc CDATA #REQUIRED
+  extent NMTOKEN #REQUIRED
+  type NMTOKEN #REQUIRED>
+
+<!ELEMENT Sync EMPTY>
+<!ATTLIST Sync
+  xmlns CDATA #FIXED ''
+  time CDATA #REQUIRED>
+
+<!ELEMENT Who EMPTY>
+<!ATTLIST Who
+  xmlns CDATA #FIXED ''
+  nb CDATA #REQUIRED>
