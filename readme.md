@@ -6,8 +6,8 @@ Le projet PREFAB s’intéresse à la question des Constructions des phrases PRE
 
 ## Documentation
 
-- Guide d'utilisation
-- Organisation de la plateforme
+- [Guide d'utilisation](https://github.com/bonzid/prefab/blob/main/guide.md#LIEN_CLAPI_CORPUS#)
+- [Organisation de la plateforme](https://github.com/bonzid/prefab/blob/main/organisation.md)
 
 
 ## Références
