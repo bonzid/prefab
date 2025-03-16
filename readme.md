@@ -2,7 +2,7 @@
 
 Le projet PREFAB s’intéresse à la question des Constructions des phrases PREFABriquées dans les interactions langagières. Il vise à inventorier et à modéliser les constructions des phrases préfabriquées à partir de différents corpus : écrits (interactionnels avec Wikiconflits et Wikidiscussions ; mais aussi romanesques avec le projet PHRASEOROM et le corpus GLFA de l’ATILF) et oraux (corpus ORFEO-CEFC). Piloté par le laboratoire LIDILEM, ce projet associe trois autres laboratoires : l’UMR ICAR, spécialisée dans les corpus oraux et les interactions ; l’UMR ATILF, experte en ressources linguistiques et en phraséologie pragmatique ; et l’UMR BCL, un laboratoire de premier plan dans l’exploration de corpus (PREFAB – Constructions Des Phrases PREFABriquées Dans Les Interactions Langagières, 2023). 
 
-Ce projet a été réalisé dans le cadre d'un stage de M1 au laboratoire LIDILEM, à l'université Grenoble-Alpes. Il a pour but de mettre en avant le travail d'annotations fait autour des phrases préfabriquées et d'autres éléments dans les interactions langagières, avec pour exemple deux corpus oraux.
+Ce projet a été réalisé dans le cadre d'un stage de M1 au laboratoire LIDILEM, à l'université Grenoble-Alpes. Il a pour but de **mettre en avant le travail d'annotations fait autour des phrases préfabriquées et d'autres éléments dans les interactions langagières**, avec pour exemple deux corpus oraux.
 
 
 ## Historique de la plateforme
