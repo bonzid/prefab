@@ -5,6 +5,8 @@ Le projet PREFAB s’intéresse à la question des Constructions des phrases PRE
 Ce projet a été réalisé dans le cadre d'un stage de M1 au laboratoire LIDILEM, à l'université Grenoble-Alpes.
 Dernière modification - juillet 2024
 
+![Aperçu de l'accueil](/images/preview1.png)
+![Aperçu de la visualisation de texte](/images/preview2.png)
 
 ## Documentation
 
